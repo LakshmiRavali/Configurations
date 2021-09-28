@@ -1,0 +1,23 @@
+git clone --depth=1 https://gitee.com/romkatv/powerlevel10k.git ~/powerlevel10k
+echo'source ~/powerlevel10k/powerlevel10k.zsh-theme'>>~/.zshrc
+Or
+brew install romkatv/powerlevel10k/powerlevel10k
+echo"source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme">>~/.zshrc
+ source ~/.zshrc
+
+p10k configure
+
+brew install zsh-autosuggestions
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+ source ~/.zshrc
+
+brew install zsh-syntax-highlighting
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.zshrc
+
+brew install zsh-history-substring-search
+source $(brew --prefix)/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+Write below two commands in .~/zshrc
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+source ~/.zshrc
